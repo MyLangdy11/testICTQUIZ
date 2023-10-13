@@ -1,0 +1,193 @@
+@font-face {
+  font-family: Koulen;
+  src: url("font/Koulen.ttf") format("truetype");
+}
+@font-face {
+  font-family: S1;
+  src: url("font/Kh\ Baphnom\ Limon\ S1.ttf") format("truetype");
+}
+#progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: lightgray;
+    position: relative;
+  }
+  #progress {
+    height: 100%;
+    background-color: green;
+    width: 0;
+    transition: width 1s linear;
+  }
+  body {
+    font-family: S1;
+    color: #333;
+    background-color: #f8f8f8;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #c60707;
+    margin-top: 15px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #c60707;
+    margin-top: 20px;
+  }
+  
+  #progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  #progress {
+    height: 100%;
+    background-color: #05e654;
+    width: 0;
+    transition: width 1s linear;
+  }
+  
+  #question {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  
+  #options {
+    margin-top: 20px;
+  }
+  
+/* T */
+ /* Set gray color for options */
+ #options {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: lightgray;
+  margin-bottom: 10px;
+}
+
+/* Set green color for correct answers */
+button.correct {
+  background-color: lightgreen;
+}
+
+/* Set red color for incorrect answers */
+button.incorrect {
+  background-color: red;
+}
+
+/* E */
+#options button{
+  box-shadow: 2px 4px rgba(201, 200, 200, 0.671);
+width: 100%;
+}
+
+  button {
+    font-size: 16px;
+    color: #fff;
+    background-color: #c60707;
+    border: none;
+    padding: 10px 20px;
+    margin: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #a50505;
+  }
+  
+  #result {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  #popup {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px;
+    max-height: 300px;
+    margin: 10px auto;
+    padding: 10px;
+   overflow: auto;
+  }
+  
+  #popup-title {
+    font-size: 18px;
+    color: #c60707;
+    margin-top: 0;
+  }
+  
+  #popup-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+  
+  #popup button {
+    font-size: 16px;
+    color: #fff;
+    background-color: #c60707;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #popup button:hover {
+    background-color: #a50505;
+  }
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 28px;
+      margin-top: 15px;
+    }
+    
+    h2 {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    
+    #question {
+      font-size: 18px;
+      margin-top: 15px;
+    }
+    
+    button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+    
+    #popup {
+      max-width: 300px;
+      margin: 10px auto;
+      padding: 10px;
+    }
+    
+    #popup-title {
+      font-size: 20px;
+    }
+    
+    #popup-text {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+    
+    #popup button {
+      font-size: 14px;
+      padding: 8px 16px;
+      margin-top: 10px;
+    }
+  }
