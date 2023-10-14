@@ -112,6 +112,21 @@ button.incorrect {
   font-family: S1;
   font-size: 18px;
 width: 100%;
+
+display: inline-block;
+outline: 0;
+text-align: center;
+cursor: pointer;
+padding: 17px 30px;
+border: 0;
+color: #fff;
+border: 2px solid transparent;
+border-color: #dd8787;
+color: #ce5f5f;
+background: transparent;
+font-weight: 800;
+line-height: 30px;
+transition: background,color .4s ease-in-out;
 }
 
   button {
@@ -122,12 +137,14 @@ width: 100%;
     padding: 10px 20px;
     margin: 7px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.7s ease;
   }
   
-  button:hover {
-    background-color: #a50505;
+  #options button:hover {
+      background-color: #dd8787;
+      color: #fff;
   }
+  
   
   #result {
     font-size: 18px;

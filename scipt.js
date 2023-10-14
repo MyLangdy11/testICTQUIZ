@@ -94,7 +94,7 @@ function updateProgressBar() {
   var progressWidth = (1 - timeLeft / 60) * 100;
   document.getElementById("progress").style.width = progressWidth + "%";
   document.getElementById("progress").style.backgroundColor = getColor(progressWidth);
-  document.getElementById("progress").textContent = timeLeft + "s left";
+  document.getElementById("progress").textContent = timeLeft + " វិនាទី⌚";
 }
 
 function getColor(progressWidth) {
@@ -153,10 +153,21 @@ function closePopup() {
 function endGame() {
   document.getElementById("question").textContent = "Quiz completed!";
   document.getElementById("options").style.display = "none";
-  document.getElementById("result").textContent = "ប្រវត្តិលេង:` ឆ្លើយបានត្រឹមត្រូវ: " + correctAnswers + ", ឆ្លើយមិនត្រឹមត្រូវ: " + incorrectAnswers + ", នៃសំណួរសរុប: " + totalQuestions;
+  document.getElementById("result").textContent = "ប្រវត្តិលេង: ឆ្លើយបានត្រឹមត្រូវ: " + correctAnswers + ", ឆ្លើយមិនត្រឹមត្រូវ: " + incorrectAnswers + ", នៃសំណួរសរុប: " + totalQuestions;
   document.getElementById("result").style.display = "block";
   document.getElementById("progress-bar").style.display = "none";
   document.getElementById("play-again").style.display = "block";
+
+  // Add Facebook share button
+  var shareButton = document.createElement("button");
+  shareButton.textContent = "Share on Facebook";
+  shareButton.addEventListener("click", function() {
+    var url = "https://langdyapps.blogspot.com"; //encodeURIComponent(window.location.href);
+    var shareUrl = "https://www.facebook.com/sharer/sharer.php?u=" + url;
+    window.open(shareUrl, "_blank");
+  });
+
+  document.getElementById("share-button-container").appendChild(shareButton);
 }
 
 function playAgain() {
