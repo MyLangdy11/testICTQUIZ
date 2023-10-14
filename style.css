@@ -26,6 +26,28 @@
     margin: 0;
     padding: 0;
   }
+
+  /* For laptops and desktops */
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url('img/background.jpg');
+    background-size: contain;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 767px) {
+  body {
+    background-image: url('img/background.jpg');
+    background-size: contain;
+    object-fit:fill;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
   
   h1 {
     font-size: 36px;
@@ -87,7 +109,8 @@ button.incorrect {
 
 /* E */
 #options button{
-  box-shadow: 2px 4px rgba(201, 200, 200, 0.671);
+  font-family: S1;
+  font-size: 18px;
 width: 100%;
 }
 
@@ -136,6 +159,7 @@ width: 100%;
   }
   
   #popup button {
+    font-family: S1;
     font-size: 16px;
     color: #fff;
     background-color: #c60707;
