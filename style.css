@@ -1,234 +1,148 @@
-@font-face {
-  font-family: Koulen;
-  src: url("font/Koulen.ttf") format("truetype");
-}
-@font-face {
-  font-family: S1;
-  src: url("font/Kh\ Baphnom\ Limon\ S1.ttf") format("truetype");
-}
-#progress-bar {
-    width: 100%;
-    height: 20px;
-    background-color: lightgray;
-    position: relative;
-  }
-  #progress {
-    height: 100%;
-    background-color: green;
-    width: 0;
-    transition: width 1s linear;
-  }
-  body {
-    font-family: S1;
-    color: #333;
-    background-color: #f8f8f8;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* For laptops and desktops */
-@media screen and (min-width: 768px) {
-  body {
-    background-image: url('img/background.jpg');
-    background-size: contain;
-    object-fit: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
-/* For mobile devices */
-@media screen and (max-width: 767px) {
-  body {
-    background-image: url('img/background.jpg');
-    background-size: contain;
-    object-fit:fill;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-}
-  
-  h1 {
-    font-size: 36px;
-    color: #c60707;
-    margin-top: 15px;
-  }
-  
-  h2 {
-    font-size: 24px;
-    color: #c60707;
-    margin-top: 20px;
-  }
-  
-  #progress-bar {
-    width: 100%;
-    height: 20px;
-    background-color: #ddd;
-    position: relative;
-    margin-top: 20px;
-  }
-  
-  #progress {
-    height: 100%;
-    background-color: #05e654;
-    width: 0;
-    transition: width 1s linear;
-  }
-  
-  #question {
-    font-size: 20px;
-    margin-top: 15px;
-  }
-  
-  #options {
-    margin-top: 20px;
-  }
-  
-/* T */
- /* Set gray color for options */
- #options {
-  display: flex;
-  flex-direction: column;
+h1 {
+  text-align: center;
 }
 
-button {
-  background-color: lightgray;
+#quiz-container {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
-/* Set green color for correct answers */
-button.correct {
-  background-color: lightgreen;
+.options {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
-/* Set red color for incorrect answers */
-button.incorrect {
-  background-color: red;
+.options li {
+  margin-bottom: 5px;
+  cursor: pointer;
 }
 
-/* E */
-#options button{
-  font-family: S1;
-  font-size: 18px;
-width: 100%;
-
-display: inline-block;
-outline: 0;
-text-align: center;
-cursor: pointer;
-padding: 17px 30px;
-border: 0;
-color: #fff;
-border: 2px solid transparent;
-border-color: #dd8787;
-color: #ce5f5f;
-background: transparent;
-font-weight: 800;
-line-height: 30px;
-transition: background,color .4s ease-in-out;
+.correct {
+  color: green;
 }
 
-  button {
-    font-size: 16px;
-    color: #fff;
-    background-color: #c60707;
-    border: none;
-    padding: 10px 20px;
-    margin: 7px;
-    cursor: pointer;
-    transition: background-color 0.7s ease;
-  }
-  
-  #options button:hover {
-      background-color: #dd8787;
-      color: #fff;
-  }
-  
-  
-  #result {
-    font-size: 18px;
-    margin-top: 20px;
-  }
-  
-  #popup {
-    display: none;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    max-width: 400px;
-    max-height: 300px;
-    margin: 10px auto;
+.incorrect {
+  color: red;
+}
+
+.additional-info {
+  display: none;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+#close-btn {
+  margin-top: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  body {
     padding: 10px;
-   overflow: auto;
   }
   
-  #popup-title {
-    font-size: 18px;
-    color: #c60707;
-    margin-top: 0;
+  #quiz-container {
+    padding: 10px;
   }
-  
-  #popup-text {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-top: 10px;
+}
+
+/* Styles for desktop */
+.question-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.question {
+  text-align: center;
+}
+
+.options {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.options li {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.result {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.additional-info {
+  display: none;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Styles for mobile */
+@media (max-width: 600px) {
+  .question-container {
+    flex-direction: column;
   }
-  
-  #popup button {
-    font-family: S1;
-    font-size: 16px;
-    color: #fff;
-    background-color: #c60707;
-    border: none;
-    padding: 10px 15px;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+
+  .options {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  #popup button:hover {
-    background-color: #a50505;
+
+  .options li {
+    margin: 0.5rem 0;
   }
-  @media (max-width: 480px) {
-    h1 {
-      font-size: 28px;
-      margin-top: 15px;
-    }
-    
-    h2 {
-      font-size: 20px;
-      margin-top: 10px;
-    }
-    
-    #question {
-      font-size: 18px;
-      margin-top: 15px;
-    }
-    
-    button {
-      font-size: 14px;
-      padding: 8px 16px;
-    }
-    
-    #popup {
-      max-width: 300px;
-      margin: 10px auto;
-      padding: 10px;
-    }
-    
-    #popup-title {
-      font-size: 20px;
-    }
-    
-    #popup-text {
-      font-size: 14px;
-      margin-top: 8px;
-    }
-    
-    #popup button {
-      font-size: 14px;
-      padding: 8px 16px;
-      margin-top: 10px;
-    }
+}
+
+.line{
+  text-align: center;
+}
+h2{
+  font-size: 20px;
+  color: #4caf50;
+}
+/* Progress bar */
+.progress-bar {
+  background-color: #4caf50;
+  height: 10px;
+  width: 100%;
+  transition: width 1s linear;
+}
+/* Question image */
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  img {
+    max-width: 90%;
   }
+}

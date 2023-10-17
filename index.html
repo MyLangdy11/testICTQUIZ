@@ -1,65 +1,29 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz Game</title>
+  <title>ICT QUIZ CHALLEGNE</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    #progress-bar {
-      width: 100%;
-      height: 20px;
-      background-color: lightgray;
-      position: relative;
-    }
-
-    #progress {
-      height: 100%;
-      background-color: green;
-      width: 0;
-      transition: width 1s linear;
-    }
-
-    #play-again {
-      background-color: #FAA4A4;;
-      font-family: S1;
-    }
-    #play-again:hover{
-      background-color: #dd8787;
-    }
-    
-  </style>
 </head>
-
 <body>
-  <h1>ICT Quiz Challenge</h1>
-  <div id="question"></div>
-  <div id="progress-bar">
-    <div id="progress"></div>
-  </div>
-  <div id="result"></div>
-  <div id="popup">
-    <h2 id="popup-title"></h2>
-    <p id="popup-text"></p>
-    <button onclick="closePopup()">បន្ទាប់>></button>
-  </div>
-  <div id="options">
-    <button onclick="checkAnswer(0)"></button>
-    <button onclick="checkAnswer(1)"></button>
-    <button onclick="checkAnswer(2)"></button>
-    <button onclick="checkAnswer(3)"></button>
+  <h1>ICT QUIZ CHALLEGNE</h1>
+  <div class="timer">60</div>
+  <div class="progress-bar"></div>
+  <div id="quiz-container" style="display: block;">
+    <div class="question"></div>
+    <div class="line">⭐💎🍒🌸💐🌺☘️</div>
+    <ul class="options"></ul>
+
+    <div id="result"></div>
+    <div class="additional-info">
+      <h2>Additional Information</h2>
+      <p>This is the additional information for the question.</p>
+      <button id="close-btn">Close</button>
+    </div>
   </div>
 
-  <!-- <div id="popup">
-    <h2 id="popup-title"></h2>
-    <p id="popup-text"></p>
-    <button onclick="closePopup()">បន្ទាប់</button>
-  </div> -->
-  <button id="play-again" onclick="playAgain()">លេងហ្គេមថ្មី</button>
-
-  <script src="scipt.js">
-
-  </script>
+ 
+<div class="game-history"></div>
+<button id="play-again-btn" style="display: none;">Play Again</button>
+  <script src="script.js"></script>
 </body>
-
 </html>
