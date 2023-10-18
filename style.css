@@ -1,10 +1,12 @@
 @font-face {
-  font-family: 'S1';
-  src: url('font/Kh\ Baphnom\ Limon\ S1.ttf') format('woff2'),
+  font-family: S1;
+  src: url("font/Kh\ Baphnom\ Limon\ S1.ttf") format("truetype");
+  /* Replace "KhmerFont.ttf" with the actual font file name and path */
 }
 @font-face {
-  font-family: 'Koulen';
-  src: url('font/Koulen.ttf') format('woff2'),
+  font-family: Koulen;
+  src: url("font/Koulen.ttf") format("truetype");
+  /* Replace "KhmerFont.ttf" with the actual font file name and path */
 }
 
 body {
@@ -17,12 +19,23 @@ body {
   font-family: S1;
   
 }
-
+/* Logo */
+div.logo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.logo img{
+  margin: auto;
+  height: 120px;
+}
 h1 {
   text-align: center;
-  font-family: Koulen;
 }
 
+a{
+  text-decoration: none;
+}
 #quiz-container {
   max-width: 500px;
   margin: 0 auto;
@@ -94,6 +107,9 @@ p{
   #quiz-container {
     padding: 10px;
   }
+  h1{
+    font-size: 45px;
+  }
 }
 
 /* Styles for desktop */
@@ -146,6 +162,12 @@ p{
 
   .options li {
     margin: 0.5rem 0;
+  }
+  h1{
+    font-size: 25px;
+  }
+  .logo img{
+    width: 80%;
   }
 }
 
@@ -211,12 +233,22 @@ button {
 }
 
 /* Khmer color styles */
+.divOfbutton{
+  display: flex;
+}
 button {
   background-color: #4CAF50; /* Yellow */
   color: #fff; /* Black */
+  margin: 0px 5px;
 }
 button:hover{
   background-color: #43a146;
+}
+#exitButton{
+  background-color: red;
+}
+#exitButton:hover{
+  background-color: #ce0f0f;
 }
 /* Khmer color styles for mobile phones */
 @media (max-width: 767px) {
@@ -241,4 +273,10 @@ button:hover{
 }
 .progress-bar{
   margin-bottom: 5px;
+}
+.timer{
+  background-color: #fff;
+  max-width: fit-content;
+  padding: 5px 20px;
+  border-radius: 10px;
 }
