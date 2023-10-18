@@ -1,116 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
   const questions = [
     {
-      question: "1What is the capital of France?",
+      question: "1តើប្រទេសកម្ពុជាមានផ្ទៃដីប៉ុន្មានគីឡូម៉ែត្រ?",
       image: "img/background.jpg",
-      options: ["Paris", "London", "Berlin", "Madrid"],
+      options: ["១៨១,០៣៥ គីឡូម៉ែត្រការ៉េ", "១៩១,២៣៤ គីឡូម៉ែតការ៉េ", "៧៨៩,១២៣ គីឡូម៉ែតការ៉េ", "២៣៤,៩០០ គីឡូម៉ែតការ៉េ"],
       answer: 0,
-      additionalInfo: "Paris is the capital of France and is known for its iconic landmarks such as the Eiffel Tower and Louvre Museum."
-    },
-    {
-      question: "2What is the capital of France?",
-      image: "img/background.jpg",
-      options: ["Paris", "London", "Berlin", "Madrid"],
-      answer: 0,
-      additionalInfo: "Paris is the capital of France and is known for its iconic landmarks such as the Eiffel Tower and Louvre Museum."
-    },
-    {
-      question: "3What is the capital of France?",
-      image: "img/background.jpg",
-      options: ["Paris", "London", "Berlin", "Madrid"],
-      answer: 0,
-      additionalInfo: "Paris is the capital of France and is known for its iconic landmarks such as the Eiffel Tower and Louvre Museum."
-    },
-    {
-      question: "4What is the capital of France?",
-      image: "img/background.jpg",
-      options: ["Paris", "London", "Berlin", "Madrid"],
-      answer: 0,
-      additionalInfo: "Paris is the capital of France and is known for its iconic landmarks such as the Eiffel Tower and Louvre Museum."
-    },
-    {
-      question: "5What is the capital of France?",
-      image: "img/background.jpg",
-      options: ["Paris", "London", "Berlin", "Madrid"],
-      answer: 0,
-      additionalInfo: "Paris is the capital of France and is known for its iconic landmarks such as the Eiffel Tower and Louvre Museum."
-    },
-    {
-      question: "6What is the capital of France?",
-      image: "img/background.jpg",
-      options: ["Paris", "London", "Berlin", "Madrid"],
-      answer: 0,
-      additionalInfo: "Paris is the capital of France and is known for its iconic landmarks such as the Eiffel Tower and Louvre Museum."
-    },
-    {
-      question: "7What is the capital of France?",
-      image: "img/background.jpg",
-      options: ["Paris", "London", "Berlin", "Madrid"],
-      answer: 0,
-      additionalInfo: "Paris is the capital of France and is known for its iconic landmarks such as the Eiffel Tower and Louvre Museum."
-    },
-    {
-      question: "8What is the capital of France?",
-      image: "img/background.jpg",
-      options: ["Paris", "London", "Berlin", "Madrid"],
-      answer: 0,
-      additionalInfo: "Paris is the capital of France and is known for its iconic landmarks such as the Eiffel Tower and Louvre Museum."
-    },
-    {
-      question: "9What is the capital of France?",
-      image: "img/background.jpg",
-      options: ["Paris", "London", "Berlin", "Madrid"],
-      answer: 0,
-      additionalInfo: "Paris is the capital of France and is known for its iconic landmarks such as the Eiffel Tower and Louvre Museum."
-    },
-    {
-      question: "10What is the capital of France?",
-      image: "img/background.jpg",
-      options: ["Paris", "London", "Berlin", "Madrid"],
-      answer: 0,
-      additionalInfo: "Paris is the capital of France and is known for its iconic landmarks such as the Eiffel Tower and Louvre Museum."
-    },
-    {
-      question: "11What is the capital of France?",
-      image: "img/background.jpg",
-      options: ["Paris", "London", "Berlin", "Madrid"],
-      answer: 0,
-      additionalInfo: "Paris is the capital of France and is known for its iconic landmarks such as the Eiffel Tower and Louvre Museum."
-    },
-    {
-      question: "12What is the capital of France?",
-      image: "img/background.jpg",
-      options: ["Paris", "London", "Berlin", "Madrid"],
-      answer: 0,
-      additionalInfo: "Paris is the capital of France and is known for its iconic landmarks such as the Eiffel Tower and Louvre Museum."
-    },
-    {
-      question: "13What is the capital of France?",
-      image: "img/background.jpg",
-      options: ["Paris", "London", "Berlin", "Madrid"],
-      answer: 0,
-      additionalInfo: "Paris is the capital of France and is known for its iconic landmarks such as the Eiffel Tower and Louvre Museum."
-    },
-    {
-      question: "14What is the capital of France?",
-      image: "img/background.jpg",
-      options: ["Paris", "London", "Berlin", "Madrid"],
-      answer: 0,
-      additionalInfo: "Paris is the capital of France and is known for its iconic landmarks such as the Eiffel Tower and Louvre Museum."
-    },
-    {
-      question: "15What is the capital of France?",
-      image: "img/background.jpg",
-      options: ["Paris", "London", "Berlin", "Madrid"],
-      answer: 0,
-      additionalInfo: "Paris is the capital of France and is known for its iconic landmarks such as the Eiffel Tower and Louvre Museum."
-    },
-    {
-      question: "16What is the capital of France?",
-      image: "img/background.jpg",
-      options: ["Paris", "London", "Berlin", "Madrid"],
-      answer: 0,
-      additionalInfo: "Paris is the capital of France and is known for its iconic landmarks such as the Eiffel Tower and Louvre Museum."
+      additionalInfo: "ប្រទេសកម្ពុជាមានផ្ទៃក្រឡា១៨១០៣៥ គីឡូម៉ែត្រការ៉េ មានព្រំប្រទល់ជាប់ថៃ ឡាវ វៀត​ណាម និងឈូងសមុទ្រ។មានព្រំប្រទល់ជាប់ថៃ ឡាវ វៀត​ណាម និងឈូងសមុទ្រ។មានព្រំប្រទល់ជាប់ថៃ ឡាវ វៀត​ណាម និងឈូងសមុទ្រ។មានព្រំប្រទល់ជាប់ថៃ ឡាវ វៀត​ណាម និងឈូងសមុទ្រ។មានព្រំប្រទល់ជាប់ថៃ ឡាវ វៀត​ណាម និងឈូងសមុទ្រ។មានព្រំប្រទល់ជាប់ថៃ ឡាវ វៀត​ណាម និងឈូងសមុទ្រ។"
     },
     // Add more questions here...
   ];
@@ -119,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function() {
   let currentQuestion;
   let timer;
   let selectedQuestions = [];
+  let scoreCorrect = 0;
+  let scoreIncorrect = 0;
 
   const questionElement = document.querySelector(".question");
   const optionsElement = document.querySelector(".options");
@@ -139,6 +36,8 @@ document.addEventListener("DOMContentLoaded", function() {
   function startGame() {
     selectedQuestions = getRandomQuestions(10);
     currentQuestionIndex = 0;
+    scoreCorrect = 0;
+    scoreIncorrect = 0;
     showQuestion();
   }
 
@@ -180,12 +79,14 @@ document.addEventListener("DOMContentLoaded", function() {
       resultElement.classList.add("correct");
       correctSound.play();
       showAdditionalInfo();
+      scoreCorrect++;
     } else {
       const correctOption = optionsElement.children[currentQuestion.answer];
       resultElement.textContent = "មិនត្រឹមត្រូវទេ! ចម្លើយត្រឹមត្រូវគឺ: " + correctOption.textContent;
       resultElement.classList.add("incorrect");
       incorrectSound.play();
       showAdditionalInfo();
+      scoreIncorrect++;
     }
 
     optionsElement.classList.add("disabled");
@@ -194,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
   function showAdditionalInfo() {
     additionalInfoElement.style.display = "block";
     additionalInfoElement.innerHTML = `
-      <h2>Additional Information</h2>
+      <h2>ពន្យល់បន្ថែម</h2>
       <p>${currentQuestion.additionalInfo}</p>
       <button id="close-info-btn">Close</button>
     `;
@@ -257,21 +158,22 @@ document.addEventListener("DOMContentLoaded", function() {
     questionElement.innerHTML = "";
     optionsElement.innerHTML = "";
     resultElement.innerHTML = "";
-    additionalInfoElement.style.display ="none";
+    additionalInfoElement.style.display = "none";
     timerElement.textContent = "";
-
+  
     const numOfQuestions = selectedQuestions.length;
     const numOfCorrectAnswers = document.querySelectorAll(".correct").length;
     const numOfIncorrectAnswers = numOfQuestions - numOfCorrectAnswers;
-
+  
     document.getElementById("quiz-container").style.display = "none";
+    document.querySelector(".game-history").style.display="block";
     gameHistoryElement.innerHTML = `
       <h2>Game History</h2>
-      <p>Correct Answers: ${numOfCorrectAnswers}</p>
-      <p>Incorrect Answers: ${numOfIncorrectAnswers}</p>
-      <p>Total Questions: ${numOfCorrectAnswers + numOfIncorrectAnswers}</p>
+      <p>ចម្លើយត្រឹមត្រូវ: ${scoreCorrect}</p>
+      <p>ចម្លើយមិនត្រឹមត្រូវ: ${scoreIncorrect}</p>
+      <p>ចំនួនសំណួរទាំងអស់: ${numOfQuestions}</p>
     `;
-
+  
     playAgainBtn.style.display = "block";
   }
 
@@ -279,6 +181,7 @@ document.addEventListener("DOMContentLoaded", function() {
     startGame();
     gameHistoryElement.innerHTML = "";
     playAgainBtn.style.display = "none";
+    document.querySelector(".game-history").style.display="none";
     document.getElementById("quiz-container").style.display = "block";
   });
 });

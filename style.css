@@ -1,10 +1,26 @@
+@font-face {
+  font-family: 'S1';
+  src: url('font/Kh\ Baphnom\ Limon\ S1.ttf') format('woff2'),
+}
+@font-face {
+  font-family: 'Koulen';
+  src: url('font/Koulen.ttf') format('woff2'),
+}
+
+body {
+  font-family: 'CustomFont', Arial, sans-serif;
+}
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
+  background-color: #FFD662;
+  font-family: S1;
+  
 }
 
 h1 {
   text-align: center;
+  font-family: Koulen;
 }
 
 #quiz-container {
@@ -48,6 +64,17 @@ h1 {
   margin-top: 20px;
   border-radius: 5px;
 }
+.detail{
+  font-family: S1;
+}
+
+.moredetail{
+  font-family: Koulen;
+}
+p{
+  max-height: 180px;
+  overflow: auto;
+}
 
 #close-btn {
   margin-top: 10px;
@@ -86,6 +113,7 @@ h1 {
   padding: 0;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .options li {
@@ -145,4 +173,72 @@ img{
   img {
     max-width: 90%;
   }
+  
+}
+/* Choosing fill  */
+.options.disabled li {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.options li.correct {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.options li.incorrect {
+  background-color: #FF0000;
+  color: #fff;
+}
+/* Button Style */
+/* Default button styles */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Button styles for mobile phones */
+@media (max-width: 767px) {
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* Khmer color styles */
+button {
+  background-color: #4CAF50; /* Yellow */
+  color: #fff; /* Black */
+}
+button:hover{
+  background-color: #43a146;
+}
+/* Khmer color styles for mobile phones */
+@media (max-width: 767px) {
+  button {
+    background-color: #4CAF50; /* Green */
+    color: #fff; /* White */
+  }
+  button:hover{
+    background-color: #43a146;
+  }
+}
+/* Game history */
+.game-history{
+  display: none;
+  background-color: #fff;
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+.progress-bar{
+  margin-bottom: 5px;
 }
