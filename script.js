@@ -311,7 +311,7 @@ document.addEventListener("DOMContentLoaded", function() {
   startGame();
 
   function startGame() {
-    selectedQuestions = getRandomQuestions(10);
+    selectedQuestions = getRandomQuestions(20);
     currentQuestionIndex = 0;
     scoreCorrect = 0;
     scoreIncorrect = 0;
