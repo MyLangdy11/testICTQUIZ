@@ -316,6 +316,133 @@ document.addEventListener("DOMContentLoaded", function() {
                   answer: 2,
                   additionalInfo: "ម៉ូនីទ័រគឺជាឧបករណ៍បញ្ចេញ(Output Device)លទ្ធផលដែលប្រើក្នុងកុំព្យូទ័រដែលបង្ហាញលទ្ធផលដែលមើលឃើញពីកុំព្យូទ័រ ឬឧបករណ៍អេឡិចត្រូនិកផ្សេងទៀត។ម៉ូនីទ័រទទួលបានលទ្ធផលដែលមើលឃើញពីកាតក្រាហ្វិក ឬអាដាប់ទ័រវីដេអូរបស់កុំព្យូទ័រតាមរយៈការភ្ជាប់ខ្សែដូចជា HDMI, DisplayPort, DVI ឬ VGA ។ កាតក្រាហ្វិកដំណើរការទិន្នន័យ ហើយបញ្ជូនវាទៅម៉ូនីទ័រ ដែលបន្ទាប់មកបង្ហាញព័ត៌មាននៅលើអេក្រង់របស់វា។"
                 },
+            {
+                    question: "តើ 1 Byte មានចំនួនប៉ុន្មាន Bits?",
+                    image: "null",
+                    options: ["4", "8", "16", "32"],
+                    answer: 1,
+                    additionalInfo: "មួយបៃគឺស្មើនឹង 8 ប៊ីត។ ដូច្នេះ ប្រសិនបើអ្នកបំប្លែង 1 បៃ(byte) ទៅជាប៊ីត(bits) អ្នកនឹងទទួលបាន៖ 1 byte = 8 Bits។"
+                  },
+              {
+                    question: "តើទំហំផ្ទុកខាងក្រោមមួយណាធំជាងគេ?",
+                    image: "null",
+                    options: ["Terabyte", "Gigabyte", "Megabyte", "Kilobyte"],
+                    answer: 0,
+                    additionalInfo: "ទំហំផ្ទុកធំបំផុតក្នុងចំណោមជម្រើសដែលបានផ្តល់គឺ តេរ៉ាបៃ (TB)។សមត្ថភាពផ្ទុកដែលបានរាយក្នុងលំដាប់ឡើងគឺ៖1. Kilobyte (KB): 1 គីឡូបៃស្មើនឹង 1,024 បៃ។2. មេកាបៃ (MB): 1 មេកាបៃស្មើនឹង 1,024 គីឡូបៃ ឬប្រហែល 1 លានបៃ។3. Gigabyte (GB): 1 gigabyte ស្មើនឹង 1,024 megabytes ឬប្រហែល 1 billion bytes។4. Terabyte (TB): 1 terabyte ស្មើនឹង 1,024 ជីហ្គាបៃ ឬប្រហែល 1 ពាន់ពាន់លានបៃ។ដូចដែលអ្នកអាចមើលឃើញ សមត្ថភាពផ្ទុកនីមួយៗគឺធំជាងទំហំមុនប្រហែល 1,024 ដង ដែលមានន័យថា terabyte មានទំហំធំជាងមួយជីហ្គាបៃ មេកាបៃ និងគីឡូបៃ។"
+                  },
+              {
+                    question: "តើអក្សរកាត់ CPU តំណាងឱ្យអ្វី?",
+                    image: "https://www.groovypost.com/wp-content/uploads/2021/06/tpu-cpu-featured.jpg",
+                    options: ["Computer Processing Unit", "Central Processing Unit", "Control Processing Unit", "Core Processing Unit"],
+                    answer: 1,
+                    additionalInfo: "CPU តំណាងឱ្យ Central Processing Unit។ វាគឺជាសមាសធាតុចម្បងនៃកុំព្យូទ័រ។ ស៊ីភីយូអនុវត្តការណែនាំរបស់កម្មវិធីកុំព្យូទ័រដោយអនុវត្តប្រតិបត្តិការនព្វន្ធមូលដ្ឋាន តក្កវិជ្ជា ការគ្រប់គ្រង និងបញ្ចូល/បញ្ចេញ (I/O) ។ ជារឿយៗវាត្រូវបានគេហៅថា ខួរក្បាល នៃកុំព្យូទ័រ។"
+                  },
+              {
+                    question: "តើមួយណាខាងក្រោមមិនមែនជាឧទាហរណ៍នៃប្រព័ន្ធប្រតិបត្តិការ?",
+                    image: "null",
+                    options: ["Windows", "Linux", "Android", "Microsoft Office"],
+                    answer: 3,
+                    additionalInfo: "ជម្រើសដែលមិនមែនជាឧទាហរណ៍នៃប្រព័ន្ធប្រតិបត្តិការគឺ Microsoft Office។ Microsoft Office គឺជាសំណុំនៃកម្មវិធីដែលបង្កើតឡើងដោយ Microsoft ដែលរួមមានកម្មវិធីដូចជា Microsoft Word, Excel, PowerPoint និងផ្សេងៗទៀត។ ខណៈពេលដែល Microsoft Office ត្រូវបានប្រើប្រាស់យ៉ាងទូលំទូលាយសម្រាប់កិច្ចការផ្សេងៗ វាមិនមែនជាប្រព័ន្ធប្រតិបត្តិការខ្លួនឯងនោះទេ។ វាដំណើរការលើប្រព័ន្ធប្រតិបត្តិការផ្សេងៗគ្នាដូចជា Windows, macOS និង Linux ។"
+                  },
+              {
+                    question: "តើអក្សរកាត់ URL តំណាងឱ្យអ្វី?",
+                    image: "null",
+                    options: ["Universal Resource Locator", "Uniform Resource Locator", "Universal Reference Link", "Uniform Reference Link"],
+                    answer: 1,
+                    additionalInfo: "URL តំណាងឱ្យ Uniform Resource Locator ។ វាគឺជាប្រព័ន្ធអាសយដ្ឋានស្តង់ដារដែលប្រើដើម្បីកំណត់អត្តសញ្ញាណធនធាននៅលើអ៊ីនធឺណិត។ URL ផ្តល់ទីតាំង ឬអាសយដ្ឋានជាក់លាក់នៃធនធានដូចជាគេហទំព័រ ឯកសារ ឬសេវាកម្ម។សមាសធាតុនៃ URL ជាធម្មតារួមបញ្ចូលពិធីការ(the protocol) (ដូចជា http:// ឬ https://) ឈ្មោះដែន(domain name) ឬអាសយដ្ឋាន IP របស់ម៉ាស៊ីនមេដែលបង្ហោះធនធាន ។ URLs ត្រូវ​បាន​ប្រើ​ដោយ​កម្មវិធី​រុករក​បណ្ដាញ​ដើម្បី​ទាញ​យក និង​បង្ហាញ​ទំព័រ​បណ្ដាញ ហើយ​ត្រូវ​បាន​ប្រើ​យ៉ាង​ទូលំទូលាយ​ក្នុង​កម្មវិធី​អ៊ីនធឺណិត​ផ្សេងៗ។"
+                  },
+              {
+                    question: "ឧបករណ៍ម្យ៉ាងដែលមានតួនាទីផ្គត់ផ្គង់ចរន្តអគ្គិសនីទៅគ្រប់ឧបករណ៍ និង សមាសភាពទាំងអស់របស់Computerគេហៅថា...",
+                    image: "null",
+                    options: ["Hard Disk", "RAM", "CPU", "Power supply"],
+                    answer: 3,
+                    additionalInfo: "Power Supply: ជាឧបករណ៍ម្យ៉ាងដែលមានតួនាទី ផ្គត់ផ្គង់ចរន្តអគ្គិសនី ទៅគ្រប់ឧបករណ៍ និងសមាសភាពទាំងអស់របស់Computer។ Power supply type: AT, Baby AT,LPX,ATX,BTX,SFZ,PS3,WTX,FTZ,LFX,CFX,EPS។"
+                  },
+              {
+                    question: "តើអ្វីទៅជាCPU Fan?",
+                    image: "https://5.imimg.com/data5/FQ/YJ/MY-8118327/intel-cpu-fan-28-processor-fan-29.jpg",
+                    options: ["ជាម៉ាស៊ីនអេឡិចត្រូនិកដែលអាចឱ្យអ្នកប្រើប្រាស់បញ្ចូលព័ត៌មាន រក្សាទុកព័ត៌មាន និងបង្ហាញព័ត៌មានមកខាងក្រៅ", "ជាកង្ហារបស់CPU សម្រាប់ធ្វើឱ្យCPUត្រជាក់នៅពេលវាដំណើរការ។ វាផ្សំឡើងរវាងកង្ហា និងឧបករណ៍ស្រូបកម្ដៅ។", "ជាអង្គចងចាំទិន្នន័យ ដែលប្រើសម្រាប់ទុកទិន្នន័យផ្សេងៗមិនឱ្យបាត់បង់។", "ចម្លើយទាំងអស់ខាងលើ"],
+                    answer: 1,
+                    additionalInfo: "CPU Fan មាននាទីជួយដកកម្ដៅ និងរក្សា CPU នៅសីតុណ្ហភាពប្រតិបត្តិការប្រកបដោយសុវត្ថិភាព។ល្បឿននៃកង្ហា CPU ជាធម្មតាត្រូវបានគ្រប់គ្រងដោយ motherboard របស់កុំព្យូទ័រ ឬឧបករណ៍បញ្ជាកង្ហារជាក់លាក់ ហើយវាកែតម្រូវដោយផ្អែកលើសីតុណ្ហភាព CPU ។ នៅពេលដែលស៊ីភីយូស្ថិតនៅក្រោមបន្ទុកធ្ងន់ ឬដំណើរការនៅសីតុណ្ហភាពខ្ពស់ ល្បឿនកង្ហារនឹងកើនឡើង ដើម្បីផ្តល់ភាពត្រជាក់កាន់តែច្រើន។ ផ្ទុយទៅវិញ នៅពេលដែលស៊ីភីយូនៅទំនេរ ឬនៅសីតុណ្ហភាពទាប ល្បឿនកង្ហារអាចនឹងកាត់បន្ថយ ដើម្បីកាត់បន្ថយសំឡេងរំខាន។កង្ហារ CPU ដើរតួនាទីយ៉ាងសំខាន់ក្នុងការរក្សាស្ថេរភាព និងភាពជាប់បានយូរនៃស៊ីភីយូ ដោយការពារវាពីការឡើងកម្ដៅខ្លាំង។"
+                  },
+              {
+                    question: "តើពាក្យពេញរបស់POSTគឺជាអ្វី?",
+                    image: "null",
+                    options: ["Point of Sale Terminal", "Power On Self Test", "Portable Optical Sensor Tester", "Power On System Test"],
+                    answer: 1,
+                    additionalInfo: "Power On Self Test (ត្រួតពិនិត្យរាល់ Hardware Personal Compter Program Boot ដែលស្ថិតនៅក្នុង ROM ត្រួតពិនិត្យ Drive A: ដើម្បីដឹងថា តើមានFloppy Diskឬអត់? បើមានFloppy Disk នៅក្នុង Drive A:វារកមើលនូវ File System ឈ្មោះ IO.sys និង MS-DOS.sys ដែលជាfileអាចឱ្យកុំព្យូទ័រដំណើរការតទៅមុខទៀត។)"
+                  },
+              {
+                    question: "តើ CPU និង Memory មានទីតាំងស្ថិតនៅលើអ្វី?",
+                    image: "null",
+                    options: ["Hard Dirve", "Storage device", "Motherboard", "Case"],
+                    answer: 2,
+                    additionalInfo: "Motherboard គឺជាផ្ទាំងសៀគ្វីធំមួយស្ថិតនៅក្នុង System Unit របស់កុំព្យូទ័រ ដែលមានតួនាទីយ៉ាងសំខាន់ក្នុងដំណើរការរបស់កុំព្យូទ័រ។ Motherboard ប្រៀបបានទៅនឹងដងខ្លួន ព្រោះរាល់Hardwareទាំងអស់របស់កុំព្យូទ័រត្រូវបានភ្ជាប់ជាមួយនឹង MotherboardហើយHardwareទាំងនោះមានដូចជា CPU, Memory,..."
+                  },
+              {
+                    question: "LED,LCD,CRT គឺជាឈ្មោះដែលទាក់ទងទៅនឹងប្រភេទផ្សេងៗគ្នានៃ...",
+                    image: "null",
+                    options: ["Semiconductor", "Sound System", "Monitor", "មិនមានចម្លើយ"],
+                    answer: 2,
+                    additionalInfo: "LED,LCD,CRT គឺជាឈ្មោះដែលទាក់ទងទៅនឹងប្រភេទផ្សេងៗគ្នានៃ Monitor"
+                  },
+              {
+                    question: "....គឺជាទម្រង់នៃការចងចាំជាអចិន្រ្តៃយ៍ ដែលផ្ទុកនូវរាល់ការណែនាំដែលកុំព្យូទ័រត្រូវការ និងមិនត្រូវបានលុបនៅពេលដែលថាមពលត្រូវបានបិទ",
+                    image: "null",
+                    options: ["Hard disk", "ROM", "RAM", "The Network Interface Card (NIC)"],
+                    answer: 1,
+                    additionalInfo: "ROM គឺជាទម្រង់នៃការចងចាំជាអចិន្រ្តៃយ៍ ដែលផ្ទុករាល់ការណែនាំដែលកុំព្យូទ័រត្រូវការ និងមិនត្រូវបានលុបនៅពេលថាមពលអគ្គិសនីត្រូវបានបិទ។"
+                  },
+              {
+                    question: "តើ USB Flash Drive ស្ថិតក្នុងប្រភេទនៃឧបករណ៍ផ្ទុក(Storage device)មួយណា?",
+                    image: "null",
+                    options: ["Secondary Storage", "Internal Storage", "Primary Storage", "External Storage"],
+                    answer: 0,
+                    additionalInfo: "USB flash drive ស្ថិតក្នុងប្រភេទនៃឧបករណ៍ផ្ទុកទិន្នន័យ Secondary Storage (Secondary Storageមានដូចជា SSD,Hard Disk,Floppy Disk,Flash Drive)។"
+                  },
+              {
+                    question: "នៅក្នុងប្រព័ន្ធប្រតិបត្តិការ Windows នៅពេលអ្នកលុបឯកសារ(File) ឬថតឯកសារ(Folder)វាមិនត្រូវបានលុបចោលភ្លាមៗទេ វានឹងផ្ទុកនៅក្នុង........",
+                    image: "null",
+                    options: ["Desktop", "Drive D:", "My Computer", "Recycle Bin"],
+                    answer: 3,
+                    additionalInfo: "នៅក្នុងប្រព័ន្ធប្រតិបត្តិការ Windows នៅពេលអ្នកលុបឯកសារ(File) ឬថតឯកសារ(Folder)វាមិនត្រូវបានលុបចោលភ្លាមៗទេ វានឹងផ្ទុកនៅក្នុង Recycle Bin"
+                  },
+              {
+                    question: "........គឺជាឧបករណ៍សម្រាប់បញ្ចូលទិន្នន័យ(Input device)",
+                    image: "null",
+                    options: ["Speaker", "Monitor", "Keyboard", "Printer"],
+                    answer: 2,
+                    additionalInfo: "Keyboard គឺជាឧបករណ៍ប្រើសម្រាប់បញ្ចូលទិន្នន័យ(Input device)។"
+                  },
+              {
+                    question: "តើមួយណាជាឧទាហរណ៍នៃលេខប្រព័ន្ធគោលពីរ?",
+                    image: "null",
+                    options: ["A1SCX1", "0978873", "687392", "1101"],
+                    answer: 3,
+                    additionalInfo: "Binary គឺជាប្រព័ន្ធលេខគោល២ ដែលបង្កើតដោយលោក Gottfried Leibniz ដែលបង្កើតឡើងដោយមានតែពីរលេខប៉ុណ្ណោះគឺ ០ និង ១។"
+                  },
+              {
+                    question: "តើ Shortcut Keys មួយណាដែលអាចឱ្យយើងរក្សាទុក(Save)នៅក្នុងកម្មវិធីណាមួយរបស់ Windows?",
+                    image: "null",
+                    options: ["Ctrl + A", "Ctrl + S", "Ctrl + P", "Ctrl + V"],
+                    answer: 1,
+                    additionalInfo: "Ctrl + S គឺជា Shortcut Keyដែលឱ្យយើងរក្សាទុក (Save)នៅក្នុងកម្មវិធីណាមួយ។"
+                  },
+              {
+                    question: "តើ Shortcut Keys មួយណាដែលអាចឱ្យយើងបិទភ្ជាប់(Past)នៅក្នុងកម្មវិធីណាមួយរបស់ Windows?",
+                    image: "null",
+                    options: ["Ctrl + A", "Ctrl + P", "Ctrl + C", "Ctrl + V"],
+                    answer: 3,
+                    additionalInfo: "Ctrl + V គឺជា Shortcut Keyដែលឱ្យយើងបិទភ្ជាប់(Past)នៅក្នុងកម្មវិធីណាមួយ។"
+                  },
+              {
+                    question: "តើ Shortcut Keys មួយណាដែលអាចឱ្យយើងចម្លង(Copy)នៅក្នុងកម្មវិធីណាមួយរបស់ Windows?",
+                    image: "null",
+                    options: ["Ctrl + C", "Ctrl + A", "Ctrl + V", "Ctrl + Z"],
+                    answer: 0,
+                    additionalInfo: "Shortcut Key ដើម្បីចម្លង(Copy)នៅក្នុងវីនដូគឺ Ctrl + C។"
+                  },
+              
             
         
       
@@ -354,7 +481,7 @@ document.addEventListener("DOMContentLoaded", function() {
   startGame();
 
   function startGame() {
-    selectedQuestions = getRandomQuestions(10);
+    selectedQuestions = getRandomQuestions(20);
     currentQuestionIndex = 0;
     scoreCorrect = 0;
     scoreIncorrect = 0;
@@ -438,17 +565,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
   function startTimer() {
     let timeLeft = 60; // Change the time limit as needed
+    let currentQuestion = 1; // Initialize the current question number
   
     const progressBar = document.querySelector(".progress-bar");
     progressBar.style.width = "100%";
   
     timer = setInterval(() => {
       timeLeft--;
-      timerElement.textContent = timeLeft;
   
       const progressPercentage = (timeLeft / 60) * 100;
       progressBar.style.width = `${progressPercentage}%`;
-      if (timeLeft<=4){
+  
+      // Display the current question number alongside the total number of questions
+      timerElement.textContent = `Time Left: ${timeLeft} `;
+  
+      if (timeLeft <= 4) {
         timeisout.play();
       }
       if (timeLeft === 0) {
@@ -457,6 +588,9 @@ document.addEventListener("DOMContentLoaded", function() {
         showCorrectAnswer();
       }
     }, 1000);
+  
+    // Increment the current question number
+    currentQuestion++;
   }
   
   function resetTimer() {

@@ -1,0 +1,86 @@
+@font-face {
+  font-family: S1;
+  src: url("font/Kh\ Baphnom\ Limon\ S1.ttf") format("truetype");
+  /* Replace "KhmerFont.ttf" with the actual font file name and path */
+}
+@font-face {
+  font-family: Koulen;
+  src: url("font/Koulen.ttf") format("truetype");
+  /* Replace "KhmerFont.ttf" with the actual font file name and path */
+}
+.button-container {
+  font-family: S1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin: 10px;
+}
+a{
+  text-decoration: none;
+  background-color: none;
+  border-radius: 10px;
+}
+.title{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.button-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.button-item i {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.button-item img{
+  width: 50%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.button-title {
+  margin-top: 5px;
+}
+
+/* Button Styles */
+.b1 {
+  background-color: #ff6384;
+}
+
+.b2 {
+  background-color: #36a2eb;
+}
+
+.b3 {
+  background-color: #ffce56;
+}
+
+.b4{
+  background-color: #4bc0c0;
+}
+
+.b5{
+  background-color: #9966ff;
+}
+
+.b6 {
+  background-color: #ff9f40;
+}
+
+/* Example Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .button-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
