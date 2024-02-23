@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Content:wght@400;700&display=swap" rel="stylesheet">
+    <title>LangdyApps-ល្បងប្រាជ្ញា👏</title>
+    <style>
+        body {
+            background-color: #f1f1f1;
+            font-family: "Content", system-ui;
+        }
+        button{
+            font-family: "Content", system-ui;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .question {
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .answer {
+            display: none;
+            margin-top: 10px;
+        }
+        
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>ល្បងប្រាជ្ញា✍️🎉🎁</h1>
+    <h4 style="text-align: center;">អភិវឌ្ឍដោយ LangdyApps-ឧបត្ថម្ភធំដោយ Phearoth💗🌺</h4>
+    <div class="question-container"></div>
+
+    <div class="button-container">
+        <button class="button next">បន្តសំណួរ</button>
+    </div>
+
+    <div id="box" style="display: none;text-align: center;">
+        <h4>អបអរសាទរ! អ្នកបានបញ្ចប់ល្បែងល្បងប្រាជ្ញាទាំងដប់សំណួរ។ សំណាងល្អ!</h4>
+        <a href="index.html"><button class="button">បានបញ្ចប់!</button></a>
+    </div>
+
+    <script>
+        // Define the array of questions
+        var questions = [
+            
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "មានផ្លែអត់ផ្កា?",
+                answer: "ផ្លែសន្ទូច។"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "ងាប់នៅម៉ោងប៉ុន្មានក៏យើងដឹង!",
+                answer: "នាឡិកាងាប់🕗"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "តើឡានអ្វីមិនដែលចាក់សាំង?",
+                answer: "ឡានចាក់ម៉ាស៊ូត និងហ្គាស់!🙃"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "មនុស្សទិញខ្ញុំមកសម្រាប់ញ៉ាំ តែពួកគេមិនញ៉ាំខ្ញុំទេ! តើខ្ញុំជាអ្វី?",
+                answer: "ចាន។"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "តើមានខែចំនួនប៉ុន្មានដែលមាន២៨ថ្ងៃ?",
+                answer: "ទាំង១២ខែ។"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "ខ្ញុំនៅជាមួយអ្នកពេញមួយថ្ងៃ តែមិនមែនពេលយប់។ តើខ្ញុំជាអ្វី?​ ",
+                answer: "ស្រមោល។ "
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "សត្វក្របីមួយក្បាលមានភ្នែកពីរ សត្វស្វាមួយក្បាលមានភ្នែកពីរ និងសត្វសេះមួយក្បាលមានភ្នែកពីរដែរ។ សំណួរសួរថាតើយើងមានភ្នែកចំនួនប៉ុន្មាន?​ ",
+                answer: "គឺបួន ព្រោះមានភ្នែកអ្នកសួរម្នាក់ និងភ្នែកអ្នកដែលគេសួរម្នាក់។ "
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "​តើបន្ទប់អ្វីដែលចោរឧស្សាហ៍ចូលទៅបំផុត?",
+                answer: " គឺបន្ទប់ឃុំឃាំង។ "
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "តើនៅពេលណា នាឡិកាឈប់ដើរ?",
+                answer: "នាឡិកាមិនអាចដើរបានទេ ព្រោះគ្មានជើង។"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "តើអ្នកដឹងទេថាការដេកលក់ក្នុងថ្នាក់ វាមិនល្អបែបណា?",
+                answer: "ការដេកក្នុងថ្នាក់វាមិនល្អ ដូចដេកលើពូកក្នុងបន្ទប់"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "តើមុនកើតនៅកន្លែងណា ដែលអ្នកមិនសូវព្រួយបារម្ភ?",
+                answer: "មុនកើតលើមុខអ្នកដទៃ។🙃"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: " អ្នក​ស្ថិត​ក្នុង​បន្ទប់​មួយ​ដែល​មាន​ទ្វារ​៨។ ក្នុង​ទ្វារ​នីមួយៗ​មាន​តោ​ពីរ​ក្បាល​ដែល​អត់ចំណី​អស់​រយៈ​ពេល​៣​ឆ្នាំ​ មក​ហើយ។ តើ​អ្នក​ត្រូវ​ធ្វើ​ដូច​ម្តេច​ទើប​អាច​ចេញ​ក្រៅ​បាន?",
+                answer: "ដើរ​ចេញ​តាម​ទ្វា​ធម្មតា ព្រោះ​តោ​ដែល​អត់​ចំណី​៣​ឆ្នាំហើយ  គឺ​ស្លាប់​គ្មាន​សល់​ទេ។"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: " តើ​អ្នក​ហ៊ាន​ភ្នាល់​ជាមួយ​ខ្ញុំ​ទេ អ្នក​ណា​ចាញ់​ត្រូវ​​បង់​ប្រាក់​១​ដុល្លារ អ្នក​ណា​ឈ្នះ​បាន​ប្រាក់​១​ដុល្លារ? ភ្នាល់​ថា​ ប្រសិន​បើ​អ្នក​ឲ្យ​ប្រាក់​ខ្ញុំ​ ២​ដុល្លារ ខ្ញុំ​នឹង​ឲ្យ​ទៅ​អ្នក​វិញ​ ៣​ដុល្លារ​។ សូម​គិត​ឲ្យ​ច្បាស់​មុន​នឹង​ភ្នាល់។",
+                answer: "អ្នក​មិន​គួរ​ភ្នាល់​ទេ​ ព្រោះ បើ​អ្នក​ឈ្នះ​ មាន​ន័យ​ថា​អ្នក​ខាត​ប្រាក់ ។ សូម​ពិចារណាៈ អ្នក​ឲ្យ​ប្រាក់​មក​ខ្ញុំ​ ២​ដុល្លារ ហើយ​ខ្ញុំ​ឆ្លើយ​វិញ​ថា ខ្ញុំ​ចាញ់​ហើយ​ខ្ញុំ​មិន​ហ៊ាន​ឲ្យ​អ្នក​៣​ដុល្លារ​ទេ។ ក្នុង​ករណី​នេះ​ខ្ញុំ​ជា​អ្នក​ចាញ់​ដូច្នេះ​ខ្ញុំ​ត្រូវ​បង់​ប្រាក់​ភ្នាល់ ១​ដុល្លារ។ ខ្ញុំ​បាន​ប្រាក់​ពី​អ្នក​២​ដុល្លារ​រួច​ជា​ស្រេច​ ដូច្នេះ​គ្រាន់​តែ​ដក​១​ដុល្លារ​ឲ្យ​អ្នក​វិញ​ជា​ការ​ស្រេច។ សរុប​ទៅ​ខ្ញុំ​ចំណេញ​១​ដុល្លារ​ អ្នក​ខាត​១​ដុល្លារ។"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: " មនុស្ស​៤​នាក់​ជិះ​ទូក​លេង ស្រាប់​តែ​ទូក​ក្រឡាប់​ធ្លាក់​ទឹក​ទាំង​អស់​គ្នា​។ ពេល​គេ​ពិនិត្យ​ទៅ​ស្រាប់​តែ​ឃើញ​ថា គ្មាន​បុរស​ម្នាក់​ណា​ទទឹក​ខ្លួន​សោះ។ តើ​មក​ពី​មូល​ហេតុ​អ្វី?",
+                answer: "ព្រោះ​អ្នក​ទាំង​បួន​សុទ្ធ​តែ​ជា​មនុស្ស​ស្រី"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "តើអ្វីដែលដៃឆ្វេងកាន់បាន តែដៃស្តាំកាន់មិនបាន?",
+                answer: "កដៃស្ដាំ,កែងដៃស្តាំ។"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "តើអ្វីដែលមិនអាចដាក់ចូលក្នុងឆ្នាំងបាន?",
+                answer: "គម្របឆ្នាំង។"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "អ្នកពន្លាត់ស្បែកខ្ញុំ ខ្ញុំមិនយំទេ ប៉ុន្តែអ្នកនឹងយំ។ តើខ្ញុំជាអ្វី?",
+                answer: "ខ្ទឹមបារាំង"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "គ្រួសារមួយមានឪពុកម្តាយ 2 នាក់និងកូនប្រុស 6 នាក់ ហើយកូនប្រុសនីមួយៗមានបងស្រីម្នាក់។ តើគ្រួសារនោះមានសមាជិកទាំងអស់ប៉ុន្មាននាក់?",
+                answer: "9 នាក់គឺ ឪពុកម្តាយ 2 នាក់ កូនប្រុស 6 នាក់និងកូនស្រីម្នាក់។"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "នៅពេលរថយន្តមួយគ្រឿងបើកបរទៅមុខ តើកង់រថយន្តមួយណាដែលមិនធ្វើចលនា?",
+                answer: "កង់សាគួររថយន្ត។"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "បុរសម្នាក់កោរពុកមាត់ច្រើនដងក្នុងមួយថ្ងៃ ប៉ុន្តែពុកមាត់របស់គាត់នៅតែវែងដដែល។ តើវាកើតឡើងយ៉ាងដូចម្តេច?",
+                answer: "គាត់ជាជាងកាត់សក់។"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "សមុទ្រ​ណា​ដែល​គ្មាន​រលក?",
+                answer: "សមុទ្រទឹកកក។"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "ក្នុង​ពិភព​លោក​យើង​នេះ​ មាន​ផ្លូវ​បត់​ប៉ុន្មាន?",
+                answer: "មាន​តែ​ពីរ​គត់​គឺ​បត់​ឆ្វេង​និង​បត់​ស្តាំ"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "មានបុរសបីនាក់ជិះទូកមួយ ទូកក៏បានលិច ហើយមានតែបុរស២នាក់ប៉ុណ្ណោះដែលទទឹកជោគសក់។ ហេតុអ្វី?",
+                answer: "បុរសទី៣ក្បាលត្រង៉ោល🙃"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "ខ្ញុំមានទីក្រុងជាច្រើន ប៉ុន្តែគ្មានផ្ទះ ខ្ញុំមានភ្នំជាច្រើនប៉ុន្តែគ្មានដើមឈើ ហើយខ្ញុំមានទឹក ប៉ុន្តែគ្មានត្រី តើខ្ញុំជាអ្វី?",
+                answer: "ខ្ញុំគឺផែនទី។"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "តើអ្នកដឹងយ៉ាងដូចម្ដេចថាការ៉ុតល្អសម្រាប់សុខភាពភ្នែករបស់អ្នក?",
+                answer: "ព្រោះខ្ញុំមិនដែលឃើញទន្សាយពាក់វ៉ែនតាទេ!"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "ខ្ញុំមានធ្មេញប៉ុន្តែខ្ញុំមិនអាចស៊ីអ្វីកើត! តើខ្ញុំជាអ្វី?",
+                answer: "ក្រាស់សិតសក់។"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "អ្នកគឺជាបងប្រុសរបស់ខ្ញុំ ប៉ុន្តែខ្ញុំមិនមែនជាប្អូនប្រុសរបស់អ្នកទេ។ តើខ្ញុំជានរណា?",
+                answer: "ប្អូនស្រីរបស់អ្នក។"
+            },
+            {
+                question: "សំណួរខាងក្រោម💗🎁",
+                content: "តើសត្វអ្វីគ្មាននៅលើលោក?",
+                answer: "សត្វចៃ!😥"
+            },
+            
+           
+            // {
+            //     question: "សំណួរខាងក្រោម💗🎁",
+            //     content: "<img src='image.jpg>' alt=''>",
+            //     answer: "This is the answer to the second question."
+            // },
+            // {
+            //     question: "Question 1",
+            //     content: "This is the first question.",
+            //     answer: "This is the answer to the first question."
+            // },
+            // {
+            //     question: "Question 2",
+            //     content: "<img src='image.jpg' alt='Question 2'>",
+            //     answer: "This is the answer to the second question."
+            // },
+            // Add more questions as needed
+        ];
+
+        // Shuffle the questions array using Fisher-Yates shuffle algorithm
+        function shuffle(array) {
+            var currentIndex = array.length, temporaryValue, randomIndex;
+
+            while (currentIndex !== 0) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+
+            return array;
+        }
+
+        // Shuffle the questions array
+        shuffle(questions);
+
+        // Get the question container element
+        var questionContainer = document.querySelector('.question-container');
+
+        // Get the next question button
+        var nextButton = document.querySelector('.button-container .next');
+
+        // Variable to keep track of the current question index
+        var currentQuestionIndex = 0;
+
+        // Variable to store the current question container
+        var currentQuestionContainer;
+
+        // Function to show the answer for the current question
+        function showAnswer() {
+            var answer = currentQuestionContainer.querySelector('.answer');
+            answer.style.display = 'block';
+        }
+
+        // Function to move to the next question
+        function nextQuestion() {
+            // Hide the current question
+            if (currentQuestionContainer) {
+                currentQuestionContainer.style.display = 'none';
+                document.getElementById("box").style.display = "none";
+            }
+
+            // Increment the question index
+            currentQuestionIndex++;
+
+            // If all questions have been answered, show the end game message
+            if (currentQuestionIndex === 10) {
+                document.getElementById("box").style.display = "block";
+                document.querySelector(".next").style.display = 'none';
+                return;
+            }
+
+            // Generate the HTML for the next question
+            var nextQuestion = questions[currentQuestionIndex];
+            var nextQuestionHTML = `
+                <div class="question">
+                    <h2>${nextQuestion.question}</h2>
+                    <p>${nextQuestion.content}</p>
+                    <button class="button">បង្ហាញចម្លើយ</button>
+                    <p class="answer">${nextQuestion.answer}</p>
+                </div>
+            `;
+
+            // Insert the HTML into the question container
+            questionContainer.innerHTML = nextQuestionHTML;
+
+            // Store the current question container
+            currentQuestionContainer = questionContainer.querySelector('.question');
+
+            // Add event listener to the new answer button
+            var answerButton = currentQuestionContainer.querySelector('.button');
+            answerButton.addEventListener('click', showAnswer);
+        }
+
+        // Generate the HTML for the first question
+        var firstQuestion = questions[currentQuestionIndex];
+        var firstQuestionHTML = `
+            <div class="question">
+                <h2>${firstQuestion.question}</h2>
+                <p>${firstQuestion.content}</p>
+                <button class="button">បង្ហាញចម្លើយ</button>
+                <p class="answer">${firstQuestion.answer}</p>
+            </div>
+        `;
+
+        // Insert the HTML into the question container
+        questionContainer.innerHTML = firstQuestionHTML;
+
+        // Store the current question container
+        currentQuestionContainer = questionContainer.querySelector('.question');
+
+        // Add event listener to the first answer button
+        var answerButton = currentQuestionContainer.querySelector('.button');
+        answerButton.addEventListener('click', showAnswer);
+
+    // Add event listener to the next question button
+    nextButton.addEventListener('click', nextQuestion);
+    </script>
+</body>
+</html>
